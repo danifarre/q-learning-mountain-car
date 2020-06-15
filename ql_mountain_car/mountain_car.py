@@ -1,6 +1,6 @@
 import numpy as np
 import gym
-import q_learner as ql
+from ql_mountain_car import q_learner as ql
 
 MAX_NUM_EPISODES = 50000
 
