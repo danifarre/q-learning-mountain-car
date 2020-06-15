@@ -1,7 +1,7 @@
 import numpy as np
 
 EPSILON_MIN = 0.005  # Aprendemos mientras el incremento de aprendizaje sea superior a dicho valor
-MAX_NUM_EPISODES = 10
+MAX_NUM_EPISODES = 50000
 STEPS_PER_EPISODE = 200
 MAX_NUM_STEPS = MAX_NUM_EPISODES * STEPS_PER_EPISODE
 EPSILON_DECAY = 500 * EPSILON_MIN / MAX_NUM_STEPS  # Caida de epsilon en cada paso

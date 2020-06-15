@@ -1,8 +1,8 @@
 import numpy as np
 import gym
-from mountain_car import q_learner as ql
+import q_learner as ql
 
-MAX_NUM_EPISODES = 10
+MAX_NUM_EPISODES = 50000
 
 
 def train(agent, environment):
@@ -23,7 +23,7 @@ def train(agent, environment):
         if total_reward > best_reward:
             best_reward = total_reward
 
-        print("EPisodio número {} con recompensa: {}, mejor recompensa: {}, epsilon: {}".format(episode, total_reward,
+        print("Episodio número {} con recompensa: {}, mejor recompensa: {}, epsilon: {}".format(episode, total_reward,
                                                                                                 best_reward,
                                                                                                 agent.epsilon))
 
